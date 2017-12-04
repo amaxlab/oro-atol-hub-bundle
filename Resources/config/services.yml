@@ -1,0 +1,12 @@
+services:
+    AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Repository\HubRepository:
+        class: AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Repository\HubRepository
+        parent: oro_entity.abstract_repository
+        arguments:
+            - AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Hub
+
+    AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Repository\HubEventRepository:
+        class: AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Repository\HubEventRepository
+        parent: oro_entity.abstract_repository
+        arguments:
+            - AmaxLab\Oro\Bundle\AtolHubBundle\Entity\HubEvent

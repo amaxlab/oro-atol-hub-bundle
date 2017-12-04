@@ -1,0 +1,13 @@
+amaxlab:
+    oro:
+        atolhub:
+            navigation:
+                atol_hub_tab: Atol Hub
+            hub:
+                entity_label: Hub
+                entity_plural_label: Hubs
+                entity_description: ""
+                id.label: Id
+                name.label: Name
+                owner.label: Owner
+                organization.label: Organization

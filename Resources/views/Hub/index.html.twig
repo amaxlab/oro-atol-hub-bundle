@@ -1,0 +1,13 @@
+{% extends 'OroUIBundle:actions:index.html.twig' %}
+{% import 'OroUIBundle::macros.html.twig' as UI %}
+{% set gridName = 'atol-hub-grid' %}
+{% set pageTitle = 'amaxlab.oro.atolhub.hub.entity_plural_label'|trans %}
+
+{% block navButtons %}
+    {% if is_granted('web_studio_hub_create') %}
+        {{ UI.addButton({
+            'path': path('atol_hub_create'),
+            'entity_label': 'amaxlab.oro.atolhub.hub.entity_label'|trans
+        }) }}
+    {% endif %}
+{% endblock %}

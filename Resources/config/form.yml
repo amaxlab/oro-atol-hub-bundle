@@ -1,0 +1,20 @@
+services:
+    atol_hub.form.hub:
+        class:           Symfony\Component\Form\Form
+        factory: [@form.factory, createNamed]
+        arguments:
+            - atol_hub_form
+            - AmaxLab\Oro\Bundle\AtolHubBundle\Form\Type\HubType
+
+    AmaxLab\Oro\Bundle\AtolHubBundle\Form\Type\HubType:
+        class: AmaxLab\Oro\Bundle\AtolHubBundle\Form\Type\HubType
+        tags:
+            - { name: form.type, alias: AmaxLab\Oro\Bundle\AtolHubBundle\Form\Type\HubType }
+
+    AmaxLab\Oro\Bundle\AtolHubBundle\Form\Handler\HubHandler:
+        class: AmaxLab\Oro\Bundle\AtolHubBundle\Form\Handler\HubHandler
+        scope: request
+        arguments:
+            - '@atol_hub.form.hub'
+            - '@request'
+            - '@doctrine.orm.entity_manager'

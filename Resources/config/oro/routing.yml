@@ -1,0 +1,4 @@
+amaxlab_oro_atol_hyb_bundle:
+    resource:     "@AtolHubBundle/Controller"
+    type:         annotation
+    prefix:       /atol/hub

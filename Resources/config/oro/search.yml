@@ -1,0 +1,14 @@
+search:
+    AmaxLab\Oro\Bundle\AtolHubBundle\Entity\Hub:
+        alias:                          atol_hub
+        search_template:                AtolHubBundle:Search:result.html.twig
+        title_fields:                   [name]
+        route:
+            name:                       atol_hub_view
+            parameters:
+                id:                     id
+        fields:
+            -
+                name:                   name
+                target_type:            text
+                target_fields:          [name]

@@ -1,0 +1,24 @@
+navigation:
+    menu_config:
+        items:
+            amaxlab_atol_hub_tab:
+                label: 'amaxlab.oro.atolhub.navigation.atol_hub_tab'
+                uri: '#'
+            amaxlab_atol_hub_list:
+                label:    'amaxlab.oro.atolhub.hub.entity_plural_label'
+                route:    'atol_hub_index'
+                extras:
+                    routes: ['atol_hub*']
+                    description: 'amaxlab.oro.atolhub.hub.entity_description'
+
+        tree:
+            application_menu:
+                children:
+                    amaxlab_atol_hub_tab:
+                        children:
+                            amaxlab_atol_hub_list: ~
+    titles:
+        amaxlab_atol_hub_index:  ~
+        amaxlab_atol_hub_update: '%hub.name% - Edit'
+        amaxlab_atol_hub_create: 'Create Hub'
+        amaxlab_atol_hub_view: '%hub.name%'

@@ -1,0 +1,2 @@
+bundles:
+    - { name: AmaxLab\Oro\Bundle\AtolHubBundle }
